@@ -14,7 +14,7 @@ html {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 img {
@@ -32,7 +32,7 @@ body {
 header {
   width: 100%;
   min-height: 100vh;
-  /* background-color: rgba(0, 0, 0, 0.55); */
+  background-color: rgba(0, 0, 0, 0.55); /* Overlay color */
   background-image: url(../img/hero.jpg);
   background-position: 100% -34%;
   background-repeat: no-repeat;
@@ -40,6 +40,32 @@ header {
   background-blend-mode: overlay;
   padding-bottom: 100px;
 }
+
+.what {
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  z-index: 999;
+}
+
+.what a {
+  color: #fff;
+  font-size: 30px;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 10px 0px #00000052;
+  background: #08e255;
+}
+
+.what a:last-child {
+  font-size: 20px;
+}
+
 /* Top Breadcrumb-Bar */
 .top-breadcrumb-bar {
   width: 100%;
@@ -131,6 +157,7 @@ header {
   width: 100%;
   min-height: 50px;
   background-color: #fff;
+  padding: 10px;
 }
 
 .top-contact .fa {
@@ -139,8 +166,8 @@ header {
 
 .top-contact a {
   margin-left: 0.5rem;
-  color: #000;
-  font-size: 0.875rem;
+  color: #fff;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -150,8 +177,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #444444;
   text-decoration: none;
@@ -162,7 +189,7 @@ header {
 .top-social .fa,
 .footer-social-icons .fa,
 .contact-right-social-icons .fa {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #fff;
   transition: 0.3s;
 }
@@ -175,7 +202,7 @@ header {
 
 @media (max-width:768px) {
   .top-contact a {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   .top-social .fa {
@@ -188,7 +215,7 @@ header {
   }
 
   .top-contact .fa {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   .section-heading h2 {
@@ -626,15 +653,12 @@ header {
 }
 /* Our Services Section */
 .home-services{
-  padding-left: 2rem;
-  padding-right: 2rem;
+
   /* background-image: url(../img/blurry-gradient-services.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; */
   background-color: #ebebeb;
-  position: relative;
-  z-index: 0;
 }
 .home-services::before{
   content: '';
@@ -732,7 +756,7 @@ header {
   text-decoration: none;
   color: #3d3d3d;
   transition: all 0.3s;
-  font-size: 0.8125rem;
+  font-size: 1rem;
 }
 
 .footer-services-wrapper a:hover,
@@ -744,7 +768,8 @@ header {
 
 .footer-contact p {
   display: block;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: #000;
   margin: 0;
   padding: 0;
@@ -753,7 +778,7 @@ header {
 
 .footer-contact a {
   text-decoration: none;
-  font-size: 0.8125rem;
+  font-size:1rem;
   color: #3d3d3d;
   display: block;
   margin-bottom: 1rem;
@@ -982,7 +1007,7 @@ header {
  color: #ff400c;
 }
 .services-single-card{
-  padding: 2rem 4rem;
+  padding: 20px;
   border-radius: 8px;
   margin-bottom: 2rem;
   position: relative;
@@ -998,12 +1023,19 @@ header {
   position: absolute;
   bottom: -50%;
   right: -16%;
-  background-color: transparent;
+  background-color: #ffffff;
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: 30px solid #ffb39e;
   z-index: -2;
+}
+.learn-more-btn{
+  text-decoration: none !important;
+  color: #fff !important;
+  background-color:#007bff !important;
+  padding: 8px 20px;
+  border-radius: 10px;
 }
 .card-2::before{
   top: -50%;
