@@ -60,9 +60,22 @@
         <li class="nav-item active">
           <a class="nav-link" href="about.html">About Us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Services</a>
-        </li>
+      <!-- 🔽 Services Dropdown Start -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+          <a class="dropdown-item" href="home-shifting.html">Home Shifting</a>
+          <a class="dropdown-item" href="office-shifting.html">Office Shifting</a>
+          <a class="dropdown-item" href="car-bike-relocation.html">Car & Bike Relocation</a>
+          <a class="dropdown-item" href="packing-unpacking.html">Packing And Unpacking</a>
+          <a class="dropdown-item" href="insurance-services.html">Insurence Services</a>
+          <a class="dropdown-item" href="loading-unloading.html">Loading And Unloading</a>
+        </div>
+      </li>
+      <!-- 🔽 Services Dropdown End -->
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
@@ -197,6 +210,46 @@
             <a class="lightbox" href="img/gallery/img-6.webp">
               <img src="img/gallery/thumbs/img-6_tn.jpg" alt="">
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="get-quote-form-sec py-5 px-2">
+    <div class="quote-form container p-2 p-md-5 rounded">
+      <h2 class="pb-4 pb-4">Order Now</h2>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="form-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Name" id="userName" required>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="form-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Phone" id="userPhone" required>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="form-group input-group-lg">
+            <input type="email" class="form-control" placeholder="Email" id="userEmail" required>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="form-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Pickup Location" id="moveFrom" required>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="form-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Drop Location" id="moveTo" required>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="form-group">
+            <button class="btn btn-lg next-btn"
+              onclick="document.getElementById('send-msg').style.display='block'">Next</button>
+            <p class="text-success mt-3" style="display: none;" id="send-msg">Thank You! We will contact you
+              shortly</p>
           </div>
         </div>
       </div>
